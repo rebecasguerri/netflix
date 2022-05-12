@@ -1,0 +1,192 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'Netflix sans';
+    src: url('font/NetflixSansLight.ttf') format('truetype');
+  }
+html{
+    font-size: 50,5%;
+}
+body{
+    font-family:  'Netflix sans';
+    margin: 0;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+header #logo{
+    margin: 2rem 0rem 0 2rem ;
+}
+header #buttonLogin{
+    margin: 2rem 2rem 0 0 ;
+    max-width: 60pt;
+    height: 2rem;
+    font-size:small;
+    border: none;
+    background-color: red;
+    color: white;
+    border-radius: 4pt;
+    padding: 1rem 1rem 1rem 1rem ;
+}
+
+main{
+  margin: 0;
+  background-image: url(images/background\ netflix.jpg); 
+  width: 100%;
+  height: 90vh;
+  color: white
+   
+}
+h1{
+    color: white;
+    font-size: 2rem;
+    width: 100%;
+}
+p{
+    font-size: 1.5rem;
+    width: 73%;
+}
+
+aside{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 7.5rem 0;
+    margin: 0 auto;
+}
+
+aside #principal{
+  text-align: center;
+  line-height: 3rem;
+ 
+ 
+}
+#tr{
+    font-size:  3rem; ;
+    width: 80%;
+    text-align: center;
+    padding: 2rem;
+    margin: auto;
+    margin-right: 5rem;
+    font-weight: bold;
+}
+#only{
+    width: 100%;
+    font-size: 1.5rem;
+}
+#principal input{
+width: 35%;
+height: 45pt;
+}
+#principal #buttonEmail{
+    width: 20%;
+    height: 45pt;
+    background-color: red;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+}
+article{
+    width: 100%;
+}
+
+#TV{
+    display: flex;
+    background-color:black ;
+    color: white;
+    width: 100%;
+    height: 50vh;
+   align-items: center;
+   justify-content: center;
+  text-align: center;  
+  
+}
+#TV article{
+    width: 100%;
+    text-align: left;
+    margin-left: 5rem;
+}
+#TV img{
+    padding-right: 4rem;
+}
+
+#baixar{
+    display: flex;
+    background-color:black ;
+    color: white;
+    width: 100%;
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+}
+#baixar article{
+    width: 50%;
+    text-align: left;
+    margin-right: 5rem;
+}
+
+#assista{
+    display: flex;
+    background-color:black ;
+    color: white;
+    width: 100%;
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+}
+
+#assista article{
+    width: 50%;
+    text-align: left;
+    margin-left: 5rem;
+}
+#assista img{
+    padding-right: 4rem;
+}
+#baixar img{
+    order: -1;
+}
+#paraCrianças{
+    display: flex;
+    background-color:black ;
+    color: white;
+    width: 100%;
+    height: 50vh;
+    align-items: center;
+   justify-content: center;
+}
+#paraCrianças img{
+    order: -1;
+}
+#paraCrianças article{
+    width: 50%;
+    text-align: left;
+    margin-left: 5rem;
+}
+#paraCrianças img{
+    padding-left: 4rem;}
+#perguntas{
+    display: flex;
+    background-color:black ;
+    color: white;
+    width: 100%;
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+}
+
+footer{
+    display: flex;
+    background-color:black ;
+    color: white;
+    width: 100%;
+    height: 50vh;
+    margin: 0%;
+   
+}
