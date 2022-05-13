@@ -5,14 +5,32 @@
     padding: 0;
 }
 @font-face {
-    font-family: 'Netflix sans';
-    src: url('font/NetflixSansLight.ttf') format('truetype');
+    font-family: 'Netflix sans balck';
+    src: url('font/NetflixSansBlack.ttf') format('truetype') ; 
   }
+  @font-face {
+    font-family: 'Netflix sans bold';
+    src: url('font/NetflixSansBold.ttf') format('truetype') ; 
+  }
+
+
+@font-face{
+    font-family: 'Netflix sans ligth';
+    src: url('font/NetflixSansligth') format('truetype');
+ }
+@font-face{
+    font-family: 'Netflix sans  regular';
+    src: url('font/NetflixSansRegular.ttf') format('truetype');
+}
+ @font-face{ 
+    font-family: 'Netflix sans thin';
+    src: url('font/NetflixSansThin.ttf') format('truetype')
+}
 html{
     font-size: 50,5%;
 }
 body{
-    font-family:  'Netflix sans';
+    font-family:'Netflix sans balck' ,'Netflix sans bold','Netflix sans ligth','Netflix sans medium', 'Netflix sans  regular', 'Netflix sans thin' ;
     margin: 0;
 }
 header{
@@ -40,24 +58,24 @@ header #buttonLogin:hover{
 
 main{
   margin: 0;
-  background-image: url(images/background\ netflix.jpg); 
+  background-image: url(images/background\ netflix.jpg ); 
   width: 100%;
   height: 90vh;
-  color: white
+  color: white;
+  border-bottom: 8pt solid #222222;
+  font-family: "Netflix sans bold";
    
 }
-h1{
-    color: white;
-    font-size: 2rem;
-    width: 100%;
-}
+
 p{
     font-size: 1.5rem;
     width: 73%;
+    font-weight: 400;
 }
 
 aside{
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-content: center;
     padding: 7.5rem 0;
@@ -70,39 +88,63 @@ aside #principal{
  
  
 }
-#tr{
-    font-size:  3rem; ;
-    width: 80%;
-    text-align: center;
-    padding: 2rem;
-    margin: auto;
-    margin-right: 5rem;
-    font-weight: bold;
+#title{
+    max-width: 38rem;
+    margin: 0 auto;
+    line-height: 1.1;
+    font-size: 3.125rem;
 }
 #only{
     width: 100%;
     font-size: 1.5rem;
+    margin: 1rem auto; 
 }
-#last{
+ spam{   
     margin: auto;
-    text-align: 9pt;
+    text-align: center;
+    font-size: 15pt;
     width: 100%;
+    padding-bottom: 2rem;
+    font-size: 1.2rem;
+    font-family: 'Netflix sans ligth';
 }
-#principal input{
-     width: 35%;
-    height: 45pt;
+form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
 }
-#principal #buttonEmail{
-    width: 20%;
-    height: 45pt;
+ form .Email{
+     width: 80%;
+     height: 100%;
+     margin: auto;
+     border: none;
+}
+ form .btn-submit{
+    width: 70%;
+    height: 100%;
     background-color:#f40612;
     border: none;
     color: white;
     font-size: 1.5rem;
 }
-aside #principal #buttonEmail:hover{
+form input .btn-submit:hover{
     background-color: #bf040d;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 article{
     width: 100%;
 }
@@ -112,10 +154,12 @@ article{
     background-color:black ;
     color: white;
     width: 100%;
-    height: 50vh;
+    height: 60vh;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     text-align: center;  
+    border-bottom: 8pt solid #222222;
+   
   
 }
 #TV article{
@@ -123,8 +167,14 @@ article{
     text-align: left;
     margin-left: 5rem;
 }
+#TV h1{
+    font-size: 3.125rem;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+}
 #TV img{
     padding-right: 4rem;
+    height: 60%;
 }
 
 #baixar{
@@ -132,14 +182,27 @@ article{
     background-color:black ;
     color: white;
     width: 100%;
-    height: 50vh;
+    height: 60vh;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    border-bottom: 8pt solid #222222;
+   
+}
+#baixar img{
+    order: -1;
+    padding-bottom: 3rem;
+    height: 75%;
+    width: 36%;
 }
 #baixar article{
-    width: 50%;
+    width: 40%;
     text-align: left;
     margin-right: 5rem;
+}
+#baixar h1{
+    font-size: 3.125rem;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
 }
 
 #assista{
@@ -147,33 +210,47 @@ article{
     background-color:black ;
     color: white;
     width: 100%;
-    height: 50vh;
+    height: 60vh;
     align-items: center;
-    justify-content: center;
+    justify-content:space-between;
+    border-bottom: 8pt solid #222222;
+   
 }
 
 #assista article{
-    width: 50%;
+    width: 44%;
     text-align: left;
-    margin-left: 5rem;
+    margin-left: 8rem;
+}
+#assista h1{
+    font-size: 3.125rem;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+}
+#assita p{
+    font-size: 1.625rem;
 }
 #assista img{
     padding-right: 4rem;
+    height: 86%;
+    width: 42%;
 }
-#baixar img{
-    order: -1;
-}
+
 #paraCrianças{
     display: flex;
     background-color:black ;
     color: white;
     width: 100%;
-    height: 50vh;
+    height: 60vh;
     align-items: center;
-   justify-content: center;
+    justify-content: space-between;
+    border-bottom: 8pt solid #222222;
+   
+   
 }
 #paraCrianças img{
     order: -1;
+    height: 60%;
 }
 #paraCrianças article{
     width: 50%;
@@ -181,13 +258,19 @@ article{
     margin-left: 5rem;
 }
 #paraCrianças img{
-    padding-left: 4rem;}
+    padding-left: 4rem;
+}
+#paraCrianças h1{
+    font-size: 3.125rem;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+}
 #perguntas{
     display: flex;
     background-color:black ;
     color: white;
     width: 100%;
-    height: 50vh;
+    height: 60vh;
     align-items: center;
     justify-content: center;
 }
@@ -197,7 +280,7 @@ footer{
     background-color:black ;
     color: white;
     width: 100%;
-    height: 50vh;
+    height: 60vh;
     margin: 0%;
    
 }
