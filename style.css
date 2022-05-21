@@ -12,6 +12,7 @@ html{
 body{
     font-family:Arial;
     margin: 0;
+  background-color: #000;
 }
 header{
     display: flex;
@@ -124,9 +125,9 @@ article{
     width: 100%;
 }
 
-.box-1{
+.box-01{
     display: flex;
-    background-color:black ;
+    background-color:black;
     color: white;
     width: 100%;
     height: 60vh;
@@ -136,17 +137,18 @@ article{
     border-bottom: 8pt solid #222222;
     border-top: 8pt solid #222222;
 }
-.box-1 article{
+.box-01 article{
     width: 50%;
     text-align: left;
     margin-left: 5rem;
 }
-.box-1 h1{
+.box-01 h1{
     font-size: 3.125rem;
     line-height: 1.1;
     margin-bottom: 0.5rem;
+   
 }
-.box-1 img{
+.box-01 img{
     padding-right: 4rem;
     height: 60%;
 }
@@ -165,8 +167,8 @@ article{
 .box-02 img{
     order: -1;
     padding-bottom: 3rem;
-    height: 75%;
-    min-width: 36%;
+    height: 85%;
+  
 }
 .box-02 article{
     width: 40%;
@@ -198,14 +200,15 @@ article{
     font-size: 3.125rem;
     line-height: 1.1;
     margin-bottom: 0.5rem;
+    width: 75%;
 }
 .box-03 p{
     font-size: 1.625rem;
 }
 .box-03 img{
     padding-right: 4rem;
-    height: 86%;
-    min-width: 42%;
+    height: 96%;
+    min-width: 38%;
 }
 
 .box-04{
@@ -213,44 +216,139 @@ article{
     background-color:black ;
     color: white;
     width: 100%;
-    height: 60vh;
+    height: 70vh;
     align-items: center;
     justify-content: space-between;
     border-bottom: 8pt solid #222222;
 }
 .box-04 img{
     order: -1;
-    height: 60%;
+    height: 85%;
+    min-width: 43%;
+    margin-left: 5rem;
 }
 .box-04 article{
-    width: 50%;
+    width: 49%;
     text-align: left;
     margin-left: 5rem;
 }
-.box-04 img{
-    padding-left: 4rem;
-}
+
 .box-04 h1{
     font-size: 3.125rem;
     line-height: 1.1;
     margin-bottom: 0.5rem;
+    width: 75%;
 }
 .box-05{
     display: flex;
+    flex-direction: column;
     background-color:black ;
     color: white;
     width: 100%;
-    height: 60vh;
+    height: auto;
     align-items: center;
-    justify-content: center;
+    padding-top: 4rem;
+    border-bottom: 8pt solid #222222;
+  
+}
+.box-05 h1{
+    font-size: 3rem;
+}
+.box-ask{
+     font-size: 1.5rem;
+     padding-top: 3rem;
+     height: 50;
+     text-align: center; 
+     width: 50rem; 
+}
+.box-ask-1{
+     background-color: #222222;
+     padding: 1.5rem;
+     text-align: left;
+     margin-bottom: 0.5rem;
+     cursor: pointer;
+}
+.box-ask-2{
+     background-color: #222222;
+      padding: 1.5rem;
+     text-align: left;
+     margin-bottom: 0.5rem;
+     cursor: pointer;
+}
+.box-ask-3{
+     background-color: #222222;
+     padding: 1.5rem;
+     text-align: left;
+     margin-bottom: 0.5rem;
+     cursor: pointer;
+}
+.box-ask-4{
+     background-color: #222222;
+     padding: 1.5rem;
+     text-align: left;
+     margin-bottom: 0.5rem;
+     cursor: pointer;
+}
+.box-ask-5{
+     background-color: #222222;
+     padding: 1.5rem;
+     text-align: left;
+     margin-bottom: 0.5rem;
+     cursor: pointer;
+}
+.box-ask-6{
+     background-color: #222222;
+     padding: 1.5rem;
+     text-align: left;
+     margin-bottom: 0.5rem;
+     cursor: pointer;
 }
 
-footer{
+/* form box 05*/
+.box-input{
+    margin: 0 auto;
+    padding: 2rem;
     display: flex;
-    background-color:black ;
-    color: white;
-    width: 100%;
-    height: 60vh;
-    margin: 0%;
-   
+    flex-direction: column;
+}
+.box-input .email{
+  height: 100%;
+  width: 100%;
+}
+.btn-value{
+    flex-direction: row;
+    width: 20%;
+    font-size: 1rem;
+    text-align: center;
+    padding-top: 0.5rem;
+    border-radius: 0.1rem;
+}
+
+/*Footer*/
+.footer{
+    max-width: 75%;
+    margin:1rem auto;
+    overflow: auto;
+    height: 40vh;
+    padding-top: 4rem;
+}
+.footer, .footer a{
+    color: #999;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+ .footer a:hover{
+    text-decoration: underline;
+}
+.footer p{
+    margin-bottom:1.5rem;
+}
+
+.footer .footer-cols{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap:2rem;
+}
+.footer li{
+    line-height: 1.9;
 }
