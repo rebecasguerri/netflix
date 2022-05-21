@@ -43,7 +43,7 @@ header #logo{
   margin: 0;
   background: url(images/background\ netflix.jpg) no-repeat center center/cover;
   width: 100%;
-  height: 90vh;
+  height: 98vh;
   color: white;
   font-family: "Netflix sans ligth"; 
 }
@@ -55,7 +55,7 @@ header #logo{
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.479);
-    box-shadow: inset 120px 100px 250px #000,inset -120px -100px 250px #000  ;
+    box-shadow: inset 120px 100px 250px rgba(0, 0, 0, 0.619),inset -120px -100px 250px rgba(0, 0, 0, 0.619)  ;
 }
 
 p{
@@ -70,7 +70,10 @@ p{
     justify-content: center;
     align-content: center;
     padding: 7.5rem 0;
-    margin: 0 auto;   
+    margin: 0 auto; 
+    font-family: arial;
+
+     
 }
 
 .box-article h1{
@@ -79,25 +82,30 @@ p{
     line-height: 1.1;
     font-size: 3.125rem;
     text-align: center; 
-   
+    z-index: 2;
+    font-family: arial;
 }
 .box-article h2{
     width: 100%;
     font-size: 1.5rem;
     margin: 1rem auto;
     text-align: center; 
+    z-index: 2;
+    font-family: arial;
 }
 .box-article h3{
     width: 100%;
     font-size: 1.2rem;
     margin: 1rem auto;
     text-align: center; 
+    z-index: 2;
 }
  
 .box-input{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    z-index: 2;
     
 }
 .box-input .email{
@@ -106,6 +114,7 @@ p{
      margin: auto;
      border: none;
      align-items: center;
+     z-index: 2;
 }
   .btn-value{
     width: 30%;
