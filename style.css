@@ -4,33 +4,13 @@
     margin: 0;
     padding: 0;
 }
-@font-face {
-    font-family: 'Netflix sans balck';
-    src: url('font/NetflixSansBlack.ttf') format('truetype') ; 
-  }
-  @font-face {
-    font-family: 'Netflix sans bold';
-    src: url('font/NetflixSansBold.ttf') format('truetype') ; 
-  }
 
 
-@font-face{
-    font-family: 'Netflix sans ligth';
-    src: url('font/NetflixSansligth') format('truetype');
- }
-@font-face{
-    font-family: 'Netflix sans  regular';
-    src: url('font/NetflixSansRegular.ttf') format('truetype');
-}
- @font-face{ 
-    font-family: 'Netflix sans thin';
-    src: url('font/NetflixSansThin.ttf') format('truetype')
-}
 html{
     font-size: 50,5%;
 }
 body{
-    font-family:'Netflix sans balck' ,'Netflix sans bold','Netflix sans ligth','Netflix sans medium', 'Netflix sans  regular', 'Netflix sans thin' ;
+    font-family:Arial;
     margin: 0;
 }
 header{
@@ -42,7 +22,7 @@ header #logo{
     margin: 2rem 0rem 0 2rem ;
     z-index: 2;
 }
-header #buttonLogin{
+ #btn-login{
     margin: 2rem 2rem 0 0 ;
     min-width: 60pt;
     height: 2rem;
@@ -54,20 +34,19 @@ header #buttonLogin{
     padding: 1pt;
     z-index: 2;
 }
-header #buttonLogin:hover{
+ #btn-login:hover{
     background-color: #d20712;
 }
 
-main{
+.box-main{
   margin: 0;
   background: url(images/background\ netflix.jpg) no-repeat center center/cover;
   width: 100%;
   height: 90vh;
   color: white;
-  border-bottom: 8pt solid #222222;
-  font-family: "Netflix sans bold"; 
+  font-family: "Netflix sans ligth"; 
 }
-main::after{
+.box-main::after{
     content: '';
     position: absolute;
     top: 0;
@@ -75,7 +54,7 @@ main::after{
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.479);
-    box-shadow: inset 120px 100px 250px #000 ;
+    box-shadow: inset 120px 100px 250px #000,inset -120px -100px 250px #000  ;
 }
 
 p{
@@ -84,64 +63,60 @@ p{
     font-weight: 400;
 }
 
-aside{
+.box-article{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-content: center;
     padding: 7.5rem 0;
-    margin: 0 auto;
-    
+    margin: 0 auto;   
 }
 
-aside #principal{
-  text-align: center;
-  line-height: 2rem;
-  z-index: 2;
- 
- 
-}
-#title{
+.box-article h1{
     max-width: 38rem;
     margin: 0 auto;
     line-height: 1.1;
     font-size: 3.125rem;
+    text-align: center; 
+   
 }
-#only{
+.box-article h2{
     width: 100%;
     font-size: 1.5rem;
-    margin: 1rem auto; 
+    margin: 1rem auto;
+    text-align: center; 
 }
- spam{   
-    margin: auto;
-    text-align: center;
-    font-size: 15pt;
+.box-article h3{
     width: 100%;
-    padding-bottom: 2rem;
     font-size: 1.2rem;
-    font-family: 'Netflix sans ligth';
+    margin: 1rem auto;
+    text-align: center; 
 }
-form{
+ 
+.box-input{
     display: flex;
     flex-direction: row;
     justify-content: center;
     
 }
- form .Email{
-     width: 80%;
+.box-input .email{
+     width: 30%;
      height: 100%;
      margin: auto;
      border: none;
+     align-items: center;
 }
- form .btn-submit{
-    width: 70%;
+  .btn-value{
+    width: 30%;
     height: 100%;
     background-color:#f40612;
     border: none;
     color: white;
     font-size: 1.5rem;
+    align-items: center;
+    justify-content: center;
 }
-form input .btn-submit:hover{
+.btn-value:hover{
     background-color: #bf040d;
 }
 
@@ -149,7 +124,7 @@ article{
     width: 100%;
 }
 
-#TV{
+.box-1{
     display: flex;
     background-color:black ;
     color: white;
@@ -159,25 +134,24 @@ article{
     justify-content: space-between;
     text-align: center;  
     border-bottom: 8pt solid #222222;
-   
-  
+    border-top: 8pt solid #222222;
 }
-#TV article{
-    width: 100%;
+.box-1 article{
+    width: 50%;
     text-align: left;
     margin-left: 5rem;
 }
-#TV h1{
+.box-1 h1{
     font-size: 3.125rem;
     line-height: 1.1;
     margin-bottom: 0.5rem;
 }
-#TV img{
+.box-1 img{
     padding-right: 4rem;
     height: 60%;
 }
 
-#baixar{
+.box-02{
     display: flex;
     background-color:black ;
     color: white;
@@ -188,24 +162,24 @@ article{
     border-bottom: 8pt solid #222222;
    
 }
-#baixar img{
+.box-02 img{
     order: -1;
     padding-bottom: 3rem;
     height: 75%;
     min-width: 36%;
 }
-#baixar article{
+.box-02 article{
     width: 40%;
     text-align: left;
     margin-right: 5rem;
 }
-#baixar h1{
+.box-02 h1{
     font-size: 3.125rem;
     line-height: 1.1;
     margin-bottom: 0.5rem;
 }
 
-#assista{
+.box-03 {
     display: flex;
     background-color:black ;
     color: white;
@@ -214,29 +188,27 @@ article{
     align-items: center;
     justify-content:space-between;
     border-bottom: 8pt solid #222222;
-   
 }
-
-#assista article{
+.box-03 article{
     width: 44%;
     text-align: left;
     margin-left: 8rem;
 }
-#assista h1{
+.box-03 h1{
     font-size: 3.125rem;
     line-height: 1.1;
     margin-bottom: 0.5rem;
 }
-#assita p{
+.box-03 p{
     font-size: 1.625rem;
 }
-#assista img{
+.box-03 img{
     padding-right: 4rem;
     height: 86%;
     min-width: 42%;
 }
 
-#paraCrianças{
+.box-04{
     display: flex;
     background-color:black ;
     color: white;
@@ -245,27 +217,25 @@ article{
     align-items: center;
     justify-content: space-between;
     border-bottom: 8pt solid #222222;
-   
-   
 }
-#paraCrianças img{
+.box-04 img{
     order: -1;
     height: 60%;
 }
-#paraCrianças article{
+.box-04 article{
     width: 50%;
     text-align: left;
     margin-left: 5rem;
 }
-#paraCrianças img{
+.box-04 img{
     padding-left: 4rem;
 }
-#paraCrianças h1{
+.box-04 h1{
     font-size: 3.125rem;
     line-height: 1.1;
     margin-bottom: 0.5rem;
 }
-#perguntas{
+.box-05{
     display: flex;
     background-color:black ;
     color: white;

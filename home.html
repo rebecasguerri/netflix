@@ -9,28 +9,27 @@
     <link rel="shortcut icon" href="favicon/netflix_logo_icon_170919.ico" type="image/x-icon">
 </head>
 <body>
-  <main>
-      
+    <div class="box-main">
         <header>
             <img src="images/netflix_official_logo_icon_168085.png" alt="logo netflix" id="logo">
-            <input type="button" value="Entrar" id="buttonLogin">
+            <input type="button" value="Entrar" id="btn-login">
         </header>
 
     
-        <aside>
-            <div id="principal">
-                <h1 id="title">Filmes ilimitados, programas de TV e muito mais.</h1>
-                <h2 id="only">Assista em qualquer lugar. Cancele a qualquer momento.</h2>
-                 <h3>Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.</h3>
-                <form action="">
-                        <input type="email" name="Email" class="Email" placeholder="Email" >
-                        <input type="submit" class="btn-sunmit" value="Vamos lá">
-                </form>
+        <div>
+            <div class="box-article">
+                <h1>Filmes ilimitados, programas de TV e muito mais.</h1>
+                <h2>Assista em qualquer lugar. Cancele a qualquer momento.</h2>
+                <h3>Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.</h3>
+                 <div class="box-input">
+                        <input type="email" name="Email" class="email">
+                        <div class="btn-value"><a> Vamos lá</a></div>
+                 </div>
             </div>
-        </aside>
-    </main>
+        </div>
+   </div>
 
-        <div id="TV">
+        <div class="box-01">
             <article>
                 <h1>Aproveite na TV</h1>
                 <p>Assista em Smart TVs, playStation, Xbox, chomecast,Apple, TV, aparelhos de Blu-ray e outros dispositivos</p>0
@@ -38,7 +37,7 @@
             <img src="images/tv.png" alt="TV" max-width="40%" height="100%">
         </div>
 
-        <div id="baixar">
+        <div class="box-02">
             <article>
                 <h1>Baixe seus programas para assistir offline</h1>
                 <p>Salve seus titulos favoritos e sempre tenha algo para assistir</p>
@@ -46,7 +45,7 @@
             <img src="images/mobile-0819.jpg" alt="download" max-width="35%" height="100%">
         </div>
 
-        <div id="assista">
+        <div class="box-03">
             <article>
                 <h1>Assista em todos os lugares.</h1>
                 <p>Transmita filmes e programas de TV ilimitados em seu telefone, tablet, laptop e TV sem pagar mais.</p>
@@ -54,7 +53,7 @@
          <img src="images/device-pile.png" alt="dispo" max-width="40%" height="100%">
         </div>
 
-        <div id="paraCrianças">
+        <div class="box-04">
             <article>
                 <h1>Crie perfils para crianças</h1>
                 <p>Deixe as crianças se aventurarem co seus personagens favoritos em um espaço feito soó para elas, sem pagar a mais por isso</p>
@@ -62,26 +61,25 @@
             <img src="images/kidsValueProp.png" alt="animação infantil" max-width="40%" height="100%">
         </div>
 
-        <div id="perguntas">
-        <article>
-                <h1>perguntas Frequentes</h1>
-                    <div class="configPerguntas">
-                            <div> O que é a Netflix ?</div>
-                            <div> Quanto custa a Netflix?</div>
-                            <div>onde posso assistir?</div>
-                            <div>Como faço para cancelar</div>
-                            <div> O que eu posso assistir na Netflix?</div>
-                            <div>A netflix é adequada para crianças?</div>
-                    </div>
-            
+        <div id="box-05">
+            <h1>perguntas Frequentes</h1>
+               <div class="box-ask">
+                    <div class="box-ask-1"> O que é a Netflix ?</div>
+                    <div class="box-ask-2"> Quanto custa a Netflix?</div>
+                    <div class="box-ask-3">onde posso assistir?</div>
+                    <div class="box-ask-4">Como faço para cancelar</div>
+                    <div class="box-ask-5"> O que eu posso assistir na Netflix?</div>
+                    <div class="box-ask-6">A netflix é adequada para crianças?</div>
+                </div>
             <p>Pronto para assistir? informe seu email para criar ou reiniciar sua assinatura</p>
-            <input type="email" name="Email" id="emailPerguntas">
-            <input type="button" value="Vamos lá" id="butonPerguntas">
+            <div class="box-input">
+                <input type="email" name="Email" class="email">
+                <div class="btn-value"><a> Vamos lá</a></div>
+             </div>
         </div>
-    
 
     <footer>
-      <h1>Dúvidas? ligue 0800 591 8942</h1>
+      <p>Dúvidas? ligue 0800 591 8942</p>
       <ul type="" >
         <li>Perguntas frequentes</li>
         <li>Centro de ajuda</li>
@@ -91,6 +89,6 @@
         <li>Carreiras</li>
         <li>Resgatar cartão pré-pago</li>
         <li>Comprar cartão pré-pago</li>
-    
+    </footer>
 </body>
 </html>
