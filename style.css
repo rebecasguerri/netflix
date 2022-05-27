@@ -62,6 +62,7 @@ p{
     font-size: 1.5rem;
     width: 73%;
     font-weight: 400;
+    color: white;
 }
 
 .box-article{
@@ -262,56 +263,45 @@ article{
 }
 .box-05 h1{
     font-size: 3rem;
+
 }
 .box-ask{
      font-size: 1.5rem;
      padding-top: 3rem;
      height: 50;
      text-align: center; 
-     width: 50rem; 
+     width: 70rem; 
 }
-.box-ask-1{
+.box-ask-item{
      background-color: #222222;
      padding: 1.5rem;
      text-align: left;
      margin-bottom: 0.5rem;
      cursor: pointer;
+     width: 50rem;
+     margin-bottom: 1px;
+   
 }
-.box-ask-2{
-     background-color: #222222;
-      padding: 1.5rem;
-     text-align: left;
-     margin-bottom: 0.5rem;
-     cursor: pointer;
+.box-ask-btn > p{
+  color: white;
 }
-.box-ask-3{
-     background-color: #222222;
-     padding: 1.5rem;
-     text-align: left;
-     margin-bottom: 0.5rem;
-     cursor: pointer;
+
+.box-resp{
+    background-color: #222222;
+    width: 71%;
+    margin: auto;
+    text-align: left;
+    margin-bottom: 1rem;
+    display: none;
 }
-.box-ask-4{
-     background-color: #222222;
-     padding: 1.5rem;
-     text-align: left;
-     margin-bottom: 0.5rem;
-     cursor: pointer;
+.box-resp span{
+    font-size: 1.25rem;
+    text-align: left;
+    display: inline-block;
+    padding: 1.2em;
+  
 }
-.box-ask-5{
-     background-color: #222222;
-     padding: 1.5rem;
-     text-align: left;
-     margin-bottom: 0.5rem;
-     cursor: pointer;
-}
-.box-ask-6{
-     background-color: #222222;
-     padding: 1.5rem;
-     text-align: left;
-     margin-bottom: 0.5rem;
-     cursor: pointer;
-}
+
 
 /* form box 05*/
 .box-input{
