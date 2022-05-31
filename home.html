@@ -22,10 +22,13 @@
                 <h1>Filmes ilimitados, programas de TV e muito mais.</h1>
                 <h2>Assista em qualquer lugar. Cancele a qualquer momento.</h2>
                 <h3>Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.</h3>
-                 <div class="box-input">
-                        <input type="email" name="Email" class="email">
-                        <div class="btn-value"><a> Vamos lá</a></div>
-                 </div>
+                 <form class="form-main" action="send-email">
+                        <input type="email" name="email" id="email-main" placeholder="Email" >
+                        <button class="btn-email">Vamos lá <svg id="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg></button>
+                    </form>
+                
             </div>
         </div>
    </div>
@@ -33,7 +36,7 @@
         <div class="box-01">
             <article>
                 <h1>Aproveite na TV</h1>
-                <p>Assista em Smart TVs, playStation, Xbox, chomecast,Apple, TV, aparelhos de Blu-ray e outros dispositivos</p>0
+                <p>Assista em Smart TVs, playStation, Xbox, chomecast,Apple, TV, aparelhos de Blu-ray e outros dispositivos</p>
             </article>
             <img src="images/tv.png" alt="TV" max-width="40%" height="100%">
         </div>
@@ -66,12 +69,16 @@
             <h1>Perguntas frequentes</h1>
                <ul class="box-ask" type="none">
                     <li class="box-list">
-
-                        <button id="b1" class="box-ask-item">
-                             <p>O que é a Netflix ? </p> 
+                        <button id="button1" class="box-ask-item">
+                           <div class="btn-svg">
+                               <p>O que é a Netflix ? </p>
+                               <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" color="white"
+                                  fill="currentColor" class="bi-plus" viewBox="0 0 16 16">
+                                  <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                                </svg>
+                           </div>
                         </button>
-                        
-                        <div id="b11" class="box-resp">
+                        <div id="awsr1" class="box-resp">
                             <span>
                               A Netflix é um serviço de transmissão online que oferece uma ampla variedade de séries, filmes e documentários premiados em milhares de aparelhos conectados à internet.
                               <br>
@@ -80,22 +87,34 @@
                             </span>
                         </div>
                     </li>
+
                     <li  class="box-list">
-                        <button id="b2"  class="box-ask-item" >
-                            <p>Quanto custa a Netflix?</p>  
+                        <button id="button2"  class="box-ask-item" >
+                            <div class="btn-svg">
+                                <p>Quanto custa a Netflix?</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" color="white"
+                                  fill="currentColor" class="bi-plus" viewBox="0 0 16 16">
+                                  <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                                </svg>
+                            </div>  
                         </button>
-                        <div id="b22" class="box-resp">
+                        <div id="awsr2" class="box-resp">
                            <span>
                                 Assista à Netflix no seu celular, tablet, Smart TV, notebook ou aparelho de streaming por uma taxa mensal única. Os planos variam de R$25,90 a R$55,90 por mês. Sem contrato nem taxas extras.
                             </span>
                         </div>
                     </li>
                     <li class="box-list">
-                        <button  id="b3" class="box-ask-item">
-                            <p>onde posso assistir?</p>
-                           
+                        <button  id="button3" class="box-ask-item">
+                            <div class="btn-svg">
+                                <p>Onde posso assistir?</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" color="white"
+                                  fill="currentColor" class="bi-plus" viewBox="0 0 16 16">
+                                  <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                                </svg>
+                            </div> 
                         </button>
-                        <div id="b33" class="box-resp">
+                        <div id="awsr3" class="box-resp">
                             <span>
                                 Assista onde quiser, quando quiser. Faça login com sua conta Netflix em netflix.com para começar a assistir no computador ou em qualquer aparelho conectado à Internet compatível com o aplicativo Netflix, como Smart TVs, smartphones, tablets, aparelhos de streaming e videogames.
                                 <br>
@@ -104,33 +123,48 @@
                         </div>
                     </li>
                     <li class="box-list">
-                        <button id="b4" class="box-ask-item">
-                            <p>Como faço para cancelar</p>
-                           
+                        <button id="button4" class="box-ask-item">
+                            <div class="btn-svg">
+                                <p>Como faço para cancelar</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" color="white"
+                                  fill="currentColor" class="bi-plus"   viewBox="0 0 16 16">
+                                  <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                                </svg>
+                            </div>
                         </button>
-                        <div id="b44" class="box-resp">
+                        <div id="awsr4" class="box-resp">
                             <span>
                                 A Netflix é flexível. Não há contratos nem compromissos. Você pode cancelar a sua conta na internet com apenas dois cliques. Não há taxa de cancelamento – você pode começar ou encerrar a sua assinatura a qualquer momento.
                             </span>
                         </div>
                     </li>
                     <li class="box-list">
-                        <button id="b5" class="box-ask-item">
-                            <p>O que eu posso assistir na Netflix?</p>
-                           
+                        <button id="button5" class="box-ask-item">
+                            <div class="btn-svg">
+                                <p>O que eu posso assistir na Netflix?</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" color="white"
+                                  fill="currentColor" class="bi-plus" viewBox="0 0 16 16">
+                                  <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                                </svg>
+                            </div>
                         </button>
-                        <div id="b55" class="box-resp">
+                        <div id="awsr5" class="box-resp">
                             <span>
                                 A Netflix tem um grande catálogo de filmes, documentários, séries, originais Netflix premiados e muito mais. Assista o quanto quiser, quando quiser.
                             </span>
                         </div>
                     </li>
                     <li class="box-list">
-                        <button id="b6" class="box-ask-item">
-                            <p>A Netflix é adequada para crianças?
-                            </p>
+                        <button id="button6" class="box-ask-item">
+                            <div class="btn-svg">
+                                <p>A Netflix é adequada para crianças?</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" color="white"
+                                  fill="currentColor" class="bi-plus" viewBox="0 0 16 16">
+                                  <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                                </svg>
+                            </div>
                         </button>
-                        <div id="b66"  class="box-resp">
+                        <div id="awsr6"  class="box-resp">
                            <span>
                                 A experiência infantil da Netflix faz parte da sua assinatura para que as crianças se divirtam em seu próprio espaço com séries e filmes familiares sob a supervisão dos pais.
                                 <br>
@@ -139,11 +173,13 @@
                         </div>
                     </li>
                 </ul>
-               <div class="box-input ask-area">
+               <div class="box-input-ask-area">
                     <h3>Pronto para assistir? informe seu email para criar ou reiniciar sua assinatura</h3>
-                    <form class="box-input-2">
-                        <input type="email" name="Email" class="email">
-                        <div class="btn-value"><a> Vamos lá</a></div>
+                    <form class="form-main" action="send-email">
+                        <input type="email" name="email" id="email-main" placeholder="Email" >
+                        <button class="btn-email">Vamos lá <svg id="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg></button>
                     </form>
                </div>
         </div>
