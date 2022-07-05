@@ -256,17 +256,16 @@ z-index: 2;
 }
 
 /*BOX-O5*/
-.box-05{
+.box-05 {
     display: flex;
     flex-direction: column;
-    background-color:black ;
+    background-color: black;
     color: white;
     width: 100%;
-    height: 115vh;
+    height: auto;
     align-items: center;
     padding-top: 4rem;
     border-bottom: 8pt solid #222222;
-  
 }
 .box-05 h1{
     font-size: 3rem;
