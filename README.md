@@ -7,7 +7,7 @@ Status: **Finalizado 😃**
 
 
  ## Descrição do Site
-   Este projeto se caracteriza em uma copia da homepage da netflix que teve o intuito de aperfeiçoar meus conhecimentos em desenvolvimeto web
+   Este projeto se caracteriza em um clone da homepage da netflix que teve o intuito de aperfeiçoar meus conhecimentos em desenvolvimeto web
  
  ### Tecnologias utilizadas
   HTML| CSS | JAVASCRIPT
